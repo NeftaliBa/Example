@@ -5,7 +5,7 @@ var particle = new Particle();
 var token; 
 // Variable que almacenará el token de autenticación
 
-particle.login({username: 'nbarrera0@ucol.mx', password: 'K7RM839C2'}).then(
+particle.login({username: 'nbarrera0@ucol.mx', password: 'M33tyf00d003'}).then(
   function(data) {
     token = data.body.access_token;
     // Almacena el token de autenticación recibido después de iniciar sesión
@@ -31,7 +31,7 @@ setInterval(function() {
     // Almacena el valor actual del control deslizante en la variable Salida1
 
     particle.callFunction({
-      deviceId: '25001d000847313037363132', 
+      deviceId: '0a10aced202194944a059eec', 
       // ID del dispositivo Particle
 
       name: 'led', 
