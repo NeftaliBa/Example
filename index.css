@@ -1,27 +1,109 @@
-/* index.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s ease;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(240, 240, 240, 0.7);
+    padding: 10px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.icon {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
 #Breaker1 {
+    width: 60px;
+    height: 30px;
+    background: #ddd;
+    outline: none;
+    border-radius: 15px;
+    transition: background 0.3s;
+    position: relative;
+}
+
+#Breaker1::-webkit-slider-thumb {
     -webkit-appearance: none;
-    /* Elimina el estilo por defecto del control deslizante */
-    height: 2px;
-    /* Define la altura del control deslizante */
-    font-family: 'museo700';
-    /* Establece una fuente específica */
-    margin-bottom: 0px;
-    /* Elimina el margen inferior */
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: #c60000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#Breaker1::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border: none;
+}
+
+#state1 {
+    display: none;
+}
+
+body.night {
+    background-color: #1a1a2e;
+}
+
+body.day {
+    background-color: #87CEEB;
+}
+
+body.night .moon {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body.day .sun {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.sun, .moon {
     position: absolute;
-    /* Coloca el control en posición absoluta en el documento */
-    padding: .1em;
-    /* Agrega un pequeño relleno */
-    background: black;
-    /* Cambia el fondo del control a negro */
-    color: yellow;
-    /* Cambia el color del texto a amarillo */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     top: 50px;
-    /* Posiciona el control a 50px desde la parte superior */
     left: 50px;
-    /* Posiciona el control a 50px desde la izquierda */
-    width: 40px;
-    /* Define el ancho del control deslizante */
-    transform: rotate(90deg);
-    /* Rota el control deslizante 90 grados */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.sun {
+    background: #FFD700;
+    box-shadow: 0 0 50px #FFD700;
+    opacity: 0;
+}
+
+.moon {
+    background: #F4F4F4;
+    box-shadow: 0 0 20px #F4F4F4;
+    opacity: 0;
 }
