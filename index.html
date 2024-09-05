@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define el conjunto de caracteres para el documento como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajusta la vista para dispositivos móviles para que sea responsiva -->
+    <title>Document</title>
+    <!-- Título del documento que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Vincula el archivo CSS externo -->
+</head>
+
+<body>
+    <!-- Cuerpo del documento -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Vincula la hoja de estilos de Font Awesome para íconos -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particle-api-js@8/dist/particle.min.js"></script>
+    <!-- Importa la librería Particle API JavaScript para interactuar con dispositivos Particle -->
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-a11y="true"></script>
+    <!-- Importa Font Awesome para íconos accesibles -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Importa jQuery versión 3.2.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Importa una versión anterior de jQuery (1.11.0) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.0/d3.min.js"></script>
+    <!-- Importa la librería D3.js para visualización de datos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <!-- Importa la librería Chart.js para generar gráficos -->
+
+    <!-- Control deslizante para activar/desactivar el breaker -->
+    <input type="range" min="0" max="1" step="1" value="0" class="slider" id="Breaker1" oninput="outputUpdate(val)">
+    <!-- Representa el estado del breaker (apagado/encendido) -->
+    <output for="rango" id="state1"></output>
+    <!-- Muestra el valor del control deslizante -->
+
+    <script src="index.js"></script>
+    <!-- Vincula el archivo JavaScript externo -->
+</body>
+</html>

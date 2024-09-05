@@ -1,0 +1,27 @@
+/* index.css */
+#Breaker1 {
+    -webkit-appearance: none;
+    /* Elimina el estilo por defecto del control deslizante */
+    height: 2px;
+    /* Define la altura del control deslizante */
+    font-family: 'museo700';
+    /* Establece una fuente específica */
+    margin-bottom: 0px;
+    /* Elimina el margen inferior */
+    position: absolute;
+    /* Coloca el control en posición absoluta en el documento */
+    padding: .1em;
+    /* Agrega un pequeño relleno */
+    background: black;
+    /* Cambia el fondo del control a negro */
+    color: yellow;
+    /* Cambia el color del texto a amarillo */
+    top: 50px;
+    /* Posiciona el control a 50px desde la parte superior */
+    left: 50px;
+    /* Posiciona el control a 50px desde la izquierda */
+    width: 40px;
+    /* Define el ancho del control deslizante */
+    transform: rotate(90deg);
+    /* Rota el control deslizante 90 grados */
+}
